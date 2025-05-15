@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Titans Quarterbacks</title>
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #ffffff;
+color: #333;
+}
+#lockscreen {
+position: fixed;
+top: 0; left: 0;
+width: 100%;
+height: 100%;
+background: #4B0082;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+}
+#lockscreen input {
+padding: 10px;
+font-size: 16px;
+border: none;
+margin-top: 10px;
+border-radius: 5px;
+}
+#lockscreen button {
+margin-top: 10px;
+padding: 10px 20px;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+background-color: white;
+color: #4B0082;
+font-weight: bold;
+cursor: pointer;
+}
+header {
+background-color: #4B0082;
+color: white;
+padding: 20px;
+text-align: center;
+}
+nav {
+background-color: #eee;
+display: flex;
+justify-content: center;
+padding: 10px;
+}
+nav a {
+color: #4B0082;
+text-decoration: none;
+margin: 0 15px;
+font-weight: bold;
+}
+nav a:hover {
+text-decoration: underline;
+}
+section {
+padding: 40px 20px;
+max-width: 900px;
+margin: auto;
+}
+h2 {
+color: #4B0082;
+}
+.download-link {
+display: block;
+margin: 10px 0;
+color: #4B0082;
+text-decoration: none;
+border: 1px solid #4B0082;
+padding: 8px 12px;
+width: fit-content;
+border-radius: 5px;
+}
+.download-link:hover {
+background-color: #4B0082;
+color: white;
+}
+footer {
+text-align: center;
+padding: 20px;
+background-color: #f4f4f4;
+color: #555;
+margin-top: 40px;
+}
+</style>
+<script>
+window.onload = function() {
+const lockscreen = document.getElementById("lockscreen");
+const passwordInput = document.getElementById("password");
+const correctPassword = "Allintriwayfootball";
+
+document.getElementById("submit").onclick = function() {
+if (passwordInput.value === correctPassword) {
+lockscreen.style.display = "none";
+} else {
+alert("Incorrect password.");
+}
+};
+};
+</script>
+</head>
+<body>
+
+<!-- Password Lock Screen -->
+<div id="lockscreen">
+<h2>Enter Password to Access Titans QBs</h2>
+<input type="password" id="password" placeholder="Password" />
+<button id="submit">Enter</button>
+</div>
+
+<!-- Main Content -->
+<header>
+<h1>Titans Quarterbacks</h1>
+<p>Prepared. Smart. Fearless.</p>
+</header>
+
+<nav>
+<a href="#installs">Installs</a>
+<a href="#manuals">Manuals</a>
+<a href="#playbook">Playbook</a>
+<a href="#drills">Drills</a>
+<a href="#downloads">Downloads</a>
+</nav>
+
+<section id="installs">
+<h2>Installs</h2>
+<p>All weekly and seasonal installs will be posted here. Make sure to study each thoroughly before practice.</p>
+<ul>
+<li>Week 1: Base Passing Concepts</li>
+<li>Week 2: Inside Zone RPOs</li>
+<li>Week 3: Boot Action Variations</li>
+</ul>
+</section>
+
+<section id="manuals">
+<h2>Manuals</h2>
+<p>Breakdowns of mechanics, terminology, and pre-snap reads.</p>
+<ul>
+<li>QB Mechanics Handbook</li>
+<li>Pre-Snap Checklist</li>
+<li>Coverage Recognition Manual</li>
+</ul>
+</section>
+
+<section id="playbook">
+<h2>Playbook</h2>
+<p>Our full offensive playbook, with terminology, responsibilities, and adjustments.</p>
+<ul>
+<li>Formation Guide</li>
+<li>Passing Concepts</li>
+<li>Run Game Install</li>
+</ul>
+</section>
+
+<section id="drills">
+<h2>Drills</h2>
+<p>Weekly drills for footwork, timing, accuracy, and decision-making.</p>
+<ul>
+<li>Quick Release Ladder Drill</li>
+<li>Progression Scramble Drill</li>
+<li>Red Zone Decision Circuit</li>
+</ul>
+</section>
+
+<section id="downloads">
+<h2>Downloads</h2>
+<p>Click to download PDFs and other resources.</p>
+<a class="download-link" href="installs.pdf" download>Download Installs PDF</a>
+<a class="download-link" href="manuals.pdf" download>Download Manuals PDF</a>
+<a class="download-link" href="playbook.pdf" download>Download Playbook PDF</a>
+<a class="download-link" href="drills.pdf" download>Download Drills PDF</a>
+</section>
+
+<footer>
+Add index.html
+&copy; 2025 Titans Football. Built for our QBs.
+</footer>
+
+</body>
+</html>
